@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Prime Video Mockup</title>
+    <!-- Local Tailwind CSS build for better performance -->
+    <link href="css/tailwind.min.css" rel="stylesheet">
+    <style>
+        .video-thumbnail:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .prime-gradient {
+            background: linear-gradient(to right, #00A8E1, #1C2E46);
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Main Navigation Header -->
+    <header class="prime-gradient p-4 flex justify-between items-center sticky top-0 z-50">
+        <div class="flex items-center space-x-2">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bf7208a7-20a7-4737-96b2-e3f8f7d0df49.png" alt="Amazon Prime Video Logo" class="h-10">
+            <h1 class="text-xl font-bold">Prime Video</h1>
+        </div> <!-- End of content container -->
+        <div class="flex space-x-4">
+            <button class="px-4 py-2 bg-blue-600 rounded hover:bg-blue-700">Sign In</button>
+            <button class="px-4 py-2 border border-white rounded hover:bg-white hover:text-black">Try Prime</button>
+        </div>
+    </header>
+
+    <!-- Featured Content Hero Section -->
+    <section class="relative h-96" aria-label="Featured Content">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f78218dc-6e57-446f-9250-b7ca28ab7e83.png" alt="Featured banner showing latest season of popular series" class="w-full h-full object-cover">
+        <div class="absolute bottom-0 left-0 p-8 bg-gradient-to-t from-black to-transparent w-full">
+            <h2 class="text-4xl font-bold mb-2">Prime Exclusive</h2>
+            <p class="text-lg mb-4">Access latest seasons and movies only on Prime</p>
+            <div class="flex space-x-4">
+                <button class="px-6 py-2 bg-white text-black font-bold rounded hover:bg-gray-200">Play</button>
+                <button class="px-6 py-2 bg-gray-600 bg-opacity-70 rounded hover:bg-opacity-100">Watch List</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Rows -->
+    <div class="p-8">
+        <h2 class="text-2xl font-bold mb-4">Recommended For You</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <!-- Movie Thumbnail Item -->
+            <div class="video-thumbnail cursor-pointer transition-all duration-200">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3e8c23b9-db9f-4cb9-a925-00c4226fdbf5.png" alt="Top rated action movie with intense scenes" class="w-full rounded shadow-lg">
+                <p class="mt-2 font-bold text-lg">Critics Choice</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/39296ee8-f7bd-449f-adc9-e134ddbe1875.png" alt="Sci-fi thriller poster with futuristic city" class="w-full rounded">
+                <p class="mt-2">Sci-Fi Thriller</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/eb1da6b5-c17d-4cc5-8692-69b1ad71255d.png" alt="Romantic comedy poster with couple laughing" class="w-full rounded">
+                <p class="mt-2">Romantic Comedy</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1882163d-357e-4fb9-ab40-25915010bebe.png" alt="Documentary about ocean life with whale" class="w-full rounded">
+                <p class="mt-2">Documentary</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/284e78e8-e265-4050-b973-829ac3bbba61.png" alt="Horror movie poster with creepy mansion" class="w-full rounded">
+                <p class="mt-2">Horror</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e71dbe55-ea15-4d6b-814c-df70b62f7143.png" alt="Animated movie poster with colorful characters" class="w-full rounded">
+                <p class="mt-2">Animation</p>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-bold mt-8 mb-4">Popular TV Shows</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <!-- TV Show Thumbnails -->
+            <div class="video-thumbnail">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b16f2f63-7ce0-4586-92b8-82a74fbc37c4.png" alt="Popular drama series poster with intense actors" class="w-full rounded">
+                <p class="mt-2">Drama Series</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8b9c01c7-a094-4271-bb05-624af2e875d9.png" alt="Comedy series poster with group of friends" class="w-full rounded">
+                <p class="mt-2">Comedy Series</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/207d7b0c-5ce1-407d-8cf0-e0a19b8b235e.png" alt="Fantasy series poster with magical characters" class="w-full rounded">
+                <p class="mt-2">Fantasy Series</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/54321b64-d231-45d1-8489-aa422062f69b.png" alt="Crime thriller poster with detective" class="w-full rounded">
+                <p class="mt-2">Crime Thriller</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f43a0ed9-7625-412a-8331-28bc37e36125.png" alt="Reality show poster with contestants" class="w-full rounded">
+                <p class="mt-2">Reality Show</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/727c839d-47ac-4475-8f7c-226fbe94a106.png" alt="Sci-fi series poster with spaceship" class="w-full rounded">
+                <p class="mt-2">Sci-Fi Series</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="prime-gradient p-8">
+        <div class="flex flex-wrap justify-between">
+            <div class="w-full md:w-auto mb-4 md:mb-0">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d412abc1-861e-4142-b3ea-665dc524e810.png" alt="Amazon Prime Video Logo" class="h-10">
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 w-full md:w-auto">
+                <div>
+                    <h3 class="font-bold mb-2">Help</h3>
+                    <ul>
+                        <li><a href="#" class="hover:underline">FAQ</a></li>
+                        <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">Account</h3>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Sign In</a></li>
+                        <li><a href="#" class="hover:underline">Create Account</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">Legal</h3>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Terms</a></li>
+                        <li><a href="#" class="hover:underline">Privacy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">Follow Us</h3>
+                    <ul>
+                        <li><a href="https://instagram.com" target="_blank" rel="noopener" class="hover:underline"><i class="fab fa-instagram"></i> Prime Instagram</a></li>
+                        <li><a href="#" class="hover:underline"><i class="fab fa-twitter"></i> Prime Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
